@@ -24,6 +24,7 @@ iree_gentbl_cc_library(
     td_file = "Passes.td",
     deps = [
         "@llvm-project//mlir:PassBaseTdFiles",
+        "//stablehlo:chlo_ops_td_files",
     ],
 )
 

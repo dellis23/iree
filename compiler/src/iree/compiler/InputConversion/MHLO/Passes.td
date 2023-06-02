@@ -8,6 +8,7 @@
 #define IREE_COMPILER_INPUTCONVERSION_MHLO_PASSES
 
 include "mlir/Pass/PassBase.td"
+include "stablehlo/dialect/ChloOps.td"
 
 def ConvertMHLOToLinalgOnTensors :
     Pass<"iree-mhlo-to-linalg-on-tensors", "ModuleOp"> {
